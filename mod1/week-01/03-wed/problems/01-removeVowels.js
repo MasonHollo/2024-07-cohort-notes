@@ -22,8 +22,28 @@ Try to solve this in 2 ways. One way will be by working with just a string, The 
 
 */
 
-// YOUR CODE HERE
+/* 
+1. creat a function called removeVowels, it will take in a string
+2.creat a variable pointing to the possible vowels : a e i o u
+3.
+4.
+*/ 
 
+
+// YOUR CODE HERE
+function removeVowels(str){
+    let vowels = "aeiouAEIOU";
+    let piggybank = "";
+   
+    for(i = 0; i < str.length; i++){
+        let letter = str[i];
+        if(!vowels.includes(letter)){
+        piggybank += letter
+        }
+        
+    }
+return piggybank;
+}
 
 console.log(removeVowels("hello")); // "hll"
 console.log(removeVowels("GOOD bye")); // "GD by"
