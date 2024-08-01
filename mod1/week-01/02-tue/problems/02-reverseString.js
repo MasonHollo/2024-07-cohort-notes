@@ -7,7 +7,17 @@ HINT: Try using the typeof functionality (you may have to look it up on MDN and 
 
 */
 
-
+function reverseString(str){
+    if(str.length === 0 || typeof str !== "string"){
+        return "Did not pass in a valid string"
+    }
+let result = "";
+for(let i = str.length-1; i >= 0; i--){
+    let letter = str[i];
+    result += letter;
+}
+return result;
+}
 
 
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */

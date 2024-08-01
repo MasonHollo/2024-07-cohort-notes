@@ -18,6 +18,17 @@ Your Polyas here:
 // Your code here
 
 
+function userData(users, str){
+    let newArr = users.slice();
+    let index = newArr.indexOf(str);
+    if (index === -1){
+        return -1
+    }
+    newArr.splice(index, 1);
+    return newArr
+    }
+
+
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
 
 
