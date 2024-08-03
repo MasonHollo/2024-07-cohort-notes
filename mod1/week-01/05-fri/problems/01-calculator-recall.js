@@ -14,6 +14,20 @@ If the operation passed in is not one of the 4 listed, the calculator should ret
 
 */
 
+function calculator(num1, num2, str){
+    if (str === "addition"){
+      return  num1 + num2
+    } else if (str === "subtraction"){
+      return  num1 - num2
+    }else if (str === "multiplication"){
+      return num1 * num2  
+    }else if (str === "division"){
+        return num1 / num2
+    }else {
+        return "Invalid Operation."
+    }
+}
+
 
 
 console.log(calculator(15,10, "addition")); // 25

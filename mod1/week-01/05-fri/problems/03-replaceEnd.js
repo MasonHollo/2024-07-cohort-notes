@@ -14,6 +14,21 @@ There are two ways to solve this. Try to think of array methods you can use to a
 */
 
 
+function replaceEnd(arr, newWord){
+    if(newWord === undefined){
+        return "A string replacement argument must be passed in.";
+    }else{
+        if(arr.length === 0){
+            arr.push(newWord);
+            return arr.join(" ");
+            else
+        }
+    }
+}
+
+
+
+
 
 let testArr = ["hello", "how", "are", "you", "doin"];
 let testArr2 = ["I", "want", "to", "go", "to", "work"];

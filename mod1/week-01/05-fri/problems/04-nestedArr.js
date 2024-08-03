@@ -24,6 +24,11 @@ Another 1 was found in aubarray at index 2. Within that subarray, the 1 was foun
 */
 
 
+function indexOfOnes(board){
+    
+}
+
+
 let circutBoard = [
     [0,1,0],
     [1,1,0],

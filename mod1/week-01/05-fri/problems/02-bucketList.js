@@ -7,11 +7,15 @@ Try to solve this in 2 ways. One can use the .includes() method, but the other s
 
 */
 
-
-
-
-
-
+ 
+function isInBucketList(country, targetCountry){
+for(let country of countries){
+    if(country === targetCountry){
+        return true
+    }
+    return fasle
+}
+}
 
 
 
