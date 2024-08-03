@@ -11,6 +11,13 @@ If no emotion is passed in, return a string that says "No emotion passed in."
 
 // YOUR CODE HERE
 
+function emotionString(str, emotion){
+    if(emotion === undefined){
+        return "No emotion passed in."
+    }else{
+        return `${str} ${emotion}`
+    }
+}
 
 
 

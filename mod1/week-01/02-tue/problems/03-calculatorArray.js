@@ -17,6 +17,7 @@ If no valid numbers are provided in the "nums" array, the function should return
 function calculatorArray(nums, operation) {
       let startingIndex = 0;
 
+<<<<<<< HEAD
       while(typeof nums[startingIndex] !== "number" && startingIndex < nums.length) {
             startingIndex++ 
       }
@@ -24,6 +25,41 @@ function calculatorArray(nums, operation) {
       if(startingIndex === nums.length) {
             return "Did not pass in any valid nums."
       }
+=======
+function calculatorArray(nums, operation){
+      let startingIndex = 0;
+
+      while(typeof nums[startingIndex] !== "number" && startingIndex < nums.length) {
+            startingIndex++ 
+      }
+      if(startingIndex === nums.length){
+            return "Did not pass in any valid nums."
+      }
+
+      let result = nums[startingIndex];
+
+      for(let i = startingIndex + 1; i < nums.length; i++){
+            let currNum = nums[i];
+
+            if (typeof currNum === "number"){
+                   if(operation === "subtraction"){
+                         result -= currNum        
+                  }else if(operation === "addition"){
+                         result += currNum
+                  }else if(operation === "multiplication"){
+                        result *= currNum
+                  }else if(operation === "division"){
+                        result /= currNum
+                  }else{
+                  return "Did not pass in a valid operation.";
+            }    
+            }    
+      }
+      return result;
+}
+
+
+>>>>>>> 12a5d38 (answer to problems)
 
 	let result = nums[startingIndex];
 
@@ -77,6 +113,7 @@ function calculatorArray(nums, operation) {
 	return result;
 }
 /* ----------------- COMMENT THESE OUT WHEN YOU ARE TO TEST OUT YOUR TEST SPECS FOR A CLEANER TEST ----------------- */
+<<<<<<< HEAD
 // console.log(calculatorArray([1, 6, true, -12], "addition"));      // -5
 // console.log(calculatorArray([1, "9", 13], "addition"));           // 14
 // console.log(calculatorArray([19, -33, 7], "subtraction"));        // 45
@@ -87,6 +124,18 @@ function calculatorArray(nums, operation) {
 // console.log(calculatorArray(["9", "8", 2], "multiplication"));    // 2
 // console.log(calculatorArray([1, 2, 3, 4], "modulo"));             // Did not pass in a valid operation.
 console.log(calculatorArray(["1", "2", "3", "4"], "addition")); // Did not pass in any valid nums.
+=======
+console.log(calculatorArray([1, 6, true, -12], "addition"));      // -5
+console.log(calculatorArray([1, "9", 13], "addition"));           // 14
+console.log(calculatorArray([19, -33, 7], "subtraction"));        // 45
+console.log(calculatorArray(["0", "9", 10, 5, 2], "division"));   // 1
+console.log(calculatorArray([0, 10, 99], "division"));            // 0
+console.log(calculatorArray([2, 4, null], "multiplication"));     // 8
+console.log(calculatorArray([5, 3, 7], "multiplication"));        // 8
+console.log(calculatorArray(["9", "8", 2], "multiplication"));    // 2
+console.log(calculatorArray([1, 2, 3, 4], "modulo"));             // Did not pass in a valid operation.
+console.log(calculatorArray(['1', '2', '3', '4'], "addition"));   // Did not pass in any valid nums.
+>>>>>>> 12a5d38 (answer to problems)
 
 	return result;
 }
