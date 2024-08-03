@@ -14,7 +14,10 @@ The function should also return a string that says "Not a valid string." if a no
 
 */
 
-
+let snakeToCamel = function (snakeStr){
+    let strArr = snakeStr.split("_");
+    for(let i = 1, i )
+}
 
 
 // console.log(snakeToCamel("hello")); // hello

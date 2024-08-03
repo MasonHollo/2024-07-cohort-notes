@@ -18,7 +18,18 @@ Prints out:
 
 */
 
+function printVowels(arr){
+   for(i = 0; i < arr.length; i++){
+    let subArr = arr[i];
+    for(let j = 0; j < subArr.length; i++){
+        let letter = subArr[j];
+        if(printVowels.includes(letter)){
+            console.log(letter)
+        }
+    }
+   }
 
+}
 
 let example1 = [
     ["A", "n", "t", "h", "o", "n", "y"],
